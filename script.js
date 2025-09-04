@@ -2,6 +2,9 @@ function validateForm() {
 const form = document.getElementById('registrationForm');
 const phone = form.phone.value.trim();
 const email = form.email.value.trim();
+
+
+
 const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 if (!emailPattern.test(email)) {
     alert("Please enter a valid email address.");
